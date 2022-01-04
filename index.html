@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+	<section class="search">
+		<div class="search__container container">
+			<h2 class="search__title">City:</h2>
+			<form class="search__form">
+				<input class="search__input" type="text" placeholder="Kiev, UA">
+				<button class="search__btn btn btn--search">
+					<svg class="search--search-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M29.6344 27.8672L22.1719 20.4047C24.2044 17.9188 25.2037 14.7468 24.9631 11.5447C24.7224 8.34271 23.2603 5.35566 20.8791 3.20144C18.4979 1.04721 15.3798 -0.109379 12.1697 -0.0291043C8.95969 0.0511709 5.9033 1.36217 3.63274 3.63273C1.36219 5.90328 0.0511861 8.95968 -0.029089 12.1697C-0.109364 15.3798 1.04723 18.4979 3.20145 20.8791C5.35568 23.2603 8.34273 24.7224 11.5447 24.963C14.7468 25.2037 17.9188 24.2044 20.4047 22.1719L27.8672 29.6344C28.1056 29.8474 28.4166 29.9612 28.7363 29.9522C29.0559 29.9432 29.36 29.8122 29.5861 29.5861C29.8122 29.36 29.9432 29.0559 29.9522 28.7362C29.9612 28.4166 29.8475 28.1056 29.6344 27.8672V27.8672ZM12.5016 22.5C10.5227 22.5009 8.58809 21.9149 6.94237 20.8161C5.29664 19.7173 4.01379 18.1551 3.2561 16.3271C2.4984 14.499 2.29991 12.4874 2.68574 10.5465C3.07156 8.60565 4.02436 6.82283 5.4236 5.42359C6.82285 4.02434 8.60567 3.07154 10.5465 2.68572C12.4874 2.2999 14.4991 2.49839 16.3271 3.25608C18.1551 4.01378 19.7173 5.29663 20.8161 6.94235C21.9149 8.58807 22.5009 10.5227 22.5 12.5016C22.4963 15.1522 21.4417 17.6931 19.5674 19.5674C17.6932 21.4417 15.1522 22.4963 12.5016 22.5Z"
+							fill="white" />
+					</svg>
+
+				</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="card">
+		<div class="card__container container">
+			<h3 class="card__status">Not found!</h3>
+			<div class="card__wrapper">
+				<img class="card__img" src="./img/01d.svg" alt="">
+				<div class="card__temp">
+					<span class="card__temp-value">0<sup class="card__temp-value--deg">° C</sup></span>
+				</div>
+				<div class="card__more">
+
+					<div class="card__more-wrapper more">
+						<label class="more__label">
+							wind:
+						</label>
+						<span class="more__value wind-value">- m/s</span>
+					</div>
+					<div class="card__more-wrapper more">
+						<label class="more__label">
+							humidity:
+						</label>
+						<span class="more__value humidity-value">- %</span>
+					</div>
+					<div class="card__more-wrapper more">
+						<label class="more__label">
+							pressure:
+						</label>
+						<span class="more__value pressure-value">- mm</span>
+					</div>
+
+				</div>
+
+				<h2 class="card__city">Kiev, <span class="country">UA</span></h2>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
